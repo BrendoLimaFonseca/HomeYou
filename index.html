@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeYou</title>
+    <link rel="stylesheet" href="./css.css">
+    <!--fonte dos titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,500&display=swap" rel="stylesheet">
+<!--font dos textos-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+<nav>
+    <ul class="ul">
+        <li class="li">
+            <img class="logo" src="./imgs/logo.png" alt="">
+        </li>
+        <div class="ld-direito">
+            <li class="li">
+       <a href="">  <p>Início</p></a> 
+        </li>
+        <li class="li">
+           <a href=""> <p>Sobre</p></a> 
+        </li>
+        <li class="li">
+         <a href=""><p>Galeria</p> </a> 
+        </li>
+        <li class="li">
+            <p><button>Contato</button></p>
+        </li>
+    </div>
+    </ul>
+</nav>
+<div class="main">
+<h1 class="titulo">Faça da your home um paraíso</h1>
+<p class="sub-titulo">Encontre uma variedade de propriedades que combinam com você.<br> 
+    Esqueça todas as dificuldades em encontrar uma residência.</p>
+    <ul class="ul2">
+        <li class="li">
+            <img src="./imgs/1.png" width="200px" alt="">
+        </li>
+        <li class="li">
+            <img src="./imgs/2.png" id="img1" width="200px" alt="">
+        </li>
+        <li class="li">
+            <img src="./imgs/3.png" width="200px" alt="">
+        </li>
+        <li class="li">
+            <img src="./imgs/4.png" id="img1" width="200px" alt="">
+        </li>
+    </ul>
+</div>
+<div class="sobre">
+<img class="secao" src="./imgs/Section.png" width="500px" alt="">
+<div class="conteudo1">
+    <ul class="ul3">
+    <li class="li2">
+        <div class="linha"></div>
+    </li>
+    <li class="li2">
+        <p>sobre</p>
+    </li>
+</ul>
+<div class="textos">
+    <h1 class="titulo">Transformamos a<br> sua casa dos sonhos<br> em realidade</h1>
+    <p class="sub-titulo">Móveis apenas essenciais e com design moderno,<br> além de revestimentos bonitos e em cores neutras<br> para manter a casa sempre com um estilo clean e <br>suave.</p>
+</div>
+
+
+</div>
+</div>
+<div class="galeria">
+    <div class="ld-direito2">
+<img src="./imgs/Image.png" width="330px" alt="">
+<h1 class="titulo" id="titulo">Hotéis de luxo</h1>
+<p class="sub-titulo" id="sub-titulo">Hotéis de luxo oferecem conforto excepcional, <br>serviços personalizados e acomodações elegantes.</p>
+<div class="ld">
+<img src="./imgs/Image (2).png" width="330px" alt="">
+<h1 class="titulo" id="titulo">Piscina residencial</h1>
+<p class="sub-titulo" id="sub-titulo">Piscina residencial: um oásis privado que oferece lazer,<br> relaxamento e diversão no conforto do seu lar.</p>
+</div>
+</div>
+<div class="textos">
+<ul class="ul3">
+    <li class="li2">
+        <div class="linha"></div>
+    </li>
+    <li class="li2">
+        <p>Galeria</p>
+    </li>
+</ul>
+
+    <h1 class="titulo">Alguns de nossos<br> trabalhos feitos<br> com amor</h1>
+
+</div>
+
+
+
+</div>
+<div class="galeria2">
+    <img src="./imgs/Image (1).png " width="500px" alt="">
+    <h1 class="titulo" id="titulo">Móveis e interiores</h1>
+    <p class="sub-titulo" id="sub-titulo">Móveis e interiores: elegância e funcionalidade para transformar<br> seu espaço.</p>
+</div>
+
+<footer class="footer">
+    <hr>
+    <ul class="ul">
+        <li class="li">
+            <p>© 2024 Homeyou</p>
+        </li>
+        <div class="ld-direito">
+            
+            <li class="li">
+<img class="icons" src="./imgs/instagram.png" alt="">
+        </li>
+        <li class="li">
+            <img  src="./imgs/facebook.png" alt="">
+        </li>
+        <li class="li">
+          <img src="./imgs/youtube.png" alt="">
+        </li>
+        <li class="li">
+            <img src="./imgs/twitter.png" alt="">
+        </li>
+    </div>
+    </ul>
+</footer>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const elementos = document.querySelectorAll(".ul2, .secao, .conteudo1, .galeria, .galeria2, .footer ");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("ativo");
+            }
+        });
+    }, {
+        threshold: 0.2 // Ativa quando 20% do elemento estiver visível
+    });
+
+    elementos.forEach((el) => observer.observe(el));
+});
+</script>
+</body>
+</html>

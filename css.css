@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 10vh;
+    
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.li{
+    list-style: none;
+    margin-inline: 20px;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+.ld-direito{
+    margin-inline: 16vw;
+    display: flex;
+    position: relative;
+    left: 15vw;
+}
+.main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 5vh;
+}
+.ul2{
+    position: relative;
+    top: 15vh;
+}
+#img1{
+    top: -2vh;
+    position: relative;
+}
+.titulo{
+    font-size: 50px;
+    font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.sub-titulo{
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+button{
+     width: 114px;
+    height: 40px;
+    top: -1vh;
+    position: relative;
+    background-color: #996830;
+    border: none;
+    color: #fff;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    transition: .4s;
+    font-style: normal;
+  
+    
+    
+}
+button:hover{
+    background-color: #442d12;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+a:hover{
+    color: #996830;
+}
+
+.sobre{
+    position: relative;
+    top: 40vh;
+}
+.secao{
+    position: relative;
+    float: right;
+    right: 13vw;
+}
+.linha{
+    width: 64px;
+border-width: 1px;
+border: 1px solid #996830
+}
+.li2{
+    list-style: none;
+    margin-inline: 10px;
+}
+.textos{
+    position: relative;
+    left: 15vw;
+}
+.ul3{
+    position: relative;
+    right: 13vw;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+}
+.galeria{
+    position: relative;
+    top: 70vh;
+}
+.ld-direito2{
+    position: relative;
+    float: right;
+    left: 25vw;
+}
+#titulo{
+    font-size: 30px;
+}
+#sub-titulo{
+    font-size: 15px;
+}
+.galeria2 {
+    position: relative;
+    left: 15vw;
+    top: -10vh;
+}
+footer{
+    position: relative;
+    top: 20vh;
+    height: 20vh;
+}
+.ld{
+    position: relative;
+    top: 3vh;
+}
+/* Animação padrão (inicia invisível) */
+.ul2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+/* Quando a div aparece, a animação é ativada */
+.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Secao (direita para esquerda) */
+.secao {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+.secao.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Conteúdo 1 (esquerda para direita) */
+.conteudo1 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.conteudo1.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Galeria (direita para esquerda) */
+.galeria {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+.galeria.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Galeria2 (esquerda para direita) */
+.galeria2 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.galeria2.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
